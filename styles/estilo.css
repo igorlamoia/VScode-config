@@ -23,7 +23,7 @@ a {
   height: 40px;
   transition: all 0.5s ease;
 }
-.menu ul{
+.menu ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -39,7 +39,7 @@ a {
   transition: all 0.5s ease;
 }
 .menu li > a {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -56,16 +56,16 @@ menu {
 .menu ul li:hover > a {
   padding-left: 30px;
   padding-right: 30px;
-  
+
   background-color: rgba(218, 201, 201, 0.082);
   color: rgb(255, 0, 140);
-  
+
   /* transition: 1s; */
   transition: all 0.3s ease;
 }
 
 .menu li:last-child > a {
-  display:flex;
+  display: flex;
   height: 100%;
   width: 100%;
   padding-left: 20px;
@@ -75,14 +75,12 @@ menu {
   color: rgb(0, 255, 221);
 }
 .menu li:last-child:hover > a {
-  display:flex;
+  display: flex;
   flex-direction: column;
   padding-left: 30px;
   padding-right: 30px;
   color: rgb(255, 0, 140);
 }
-
-
 
 h1 {
   font-size: 2rem;
@@ -97,18 +95,42 @@ footer {
 }
 
 .parallax {
-    background-image: url('../images/VScode.png');
-    /* Definindo a altura*/
-    min-height: 50vh;
-    background-size: cover;
-    /* Criando o efeito do parallax */
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
+  background-image: url('../images/VScode.png');
+  /* Definindo a altura*/
+  min-height: 50vh;
+  background-size: cover;
+  /* Criando o efeito do parallax */
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
 }
-  
-#sobre {
+#opacidade {
   background-color: rgba(0, 0, 0, 0.753);
+}
+
+#text {
+  background-color:  rgba(0, 0, 0, 0.459);
+  display: flex;
+  flex-direction: column;
+  padding-top: 55px;
+  box-shadow: 20px 20px 5px black;
+  border-radius: 20px;
+
+  
+}
+.view {
+  display: flex;
+  justify-content: center;
+}
+
+#alinhamento {
+  background-color: rgba(0, 0, 0, 0.753);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#sobre {
   min-height: 50vh;
   color: white;
   display: flex;
@@ -136,7 +158,7 @@ footer {
 }
 .botao:hover {
   /* color: rgb(0, 255, 221); */
-  background-color:rgb(255, 0, 140);
+  background-color: rgb(255, 0, 140);
   color: rgb(255, 255, 255);
 }
 
@@ -151,14 +173,13 @@ footer {
   width: 0px;
   height: 100%;
   border-radius: 10px;
-  background-color:rgba(14, 14, 14, 0.466);
+  background-color: rgba(14, 14, 14, 0.466);
   transition: all 0.7s ease;
 }
 .botao:hover:before {
   width: 100%;
 }
 
-
 #eu {
-  background-color:red;
+  background-color: red;
 }

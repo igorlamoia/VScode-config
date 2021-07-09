@@ -14,7 +14,7 @@
       text-decoration: none !important;
     }
     .carousel-item {
-      height: 32rem !important;
+      height: 50vh !important;
     }
 
   </style>
@@ -28,8 +28,8 @@
       <li><a type="button" href="./formulario">Contato</a></li>
     </ul>
   </navbar>
-
-
+  <div class="parallax">
+    <div id="opacidade">
      <!--Carousel Wrapper-->
      <div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
       <!--Indicadores pra trocar de slide, em ol pois é uma lista ordenada, fica mais semântico-->
@@ -44,26 +44,26 @@
         <div class="carousel-item active">
           <!--View para mudança-->
           <div class="view">
-            <div style="background-color: violet;">
             <!--Vídeo-->
             <video class="video-fluid" autoplay loop muted>
               <source src="./videos/dracula.mp4" type="video/mp4" />
             </video>
           </div>
-          </div>
     
           <!--Legenda-->
           <div class="carousel-caption">
             <div class="animated fadeInDown">
-              <h3 class="h3-responsive">Tema Dracula</h3>
-              <p>Ajuda na 
-                identificação de:
-                <ul>
-                  <li>Variáveis locais</li>
-                  <li>Estruturas, classes</li>
-                  <li>Nomes padrões</li>
-                </ul> 
-              </p>
+              <span id="text">
+                <h3 class="h3-responsive">Tema Dracula</h3>
+                <p>Ajuda na 
+                  identificação de:
+                  <ul>
+                    <li>Variáveis locais</li>
+                    <li>Estruturas, classes</li>
+                    <li>Nomes padrões</li>
+                  </ul> 
+                </p>
+              </span>
             </div>
           </div>
           <!--Legenda-->
@@ -76,19 +76,22 @@
           <!--View para mudança-->
           <div class="view">
             <!--Video source-->
+            <div id="opacidade">
             <video class="video-fluid" autoplay loop muted>
-              <source src="./videos/tabnine.mp4" type="video/mp4" />
-            </video>
+                <source src="./videos/tabnine.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
           
           <!--Caption-->
           <div class="carousel-caption">
             <div class="animated fadeInDown">
-              <h3 class="h3-responsive">Tabnine</h3>
-                  <div class="mask rgba-purple-slight">
-                    O melhor autocomplete do mercado
-                  </div>
-              
+              <span id="text">
+                <h3 class="h3-responsive">Tabnine</h3>
+                <p>
+                  O melhor autocomplete do mercado
+                </p>    
+              </span>
             </div>
           </div>
           <!--Caption-->
@@ -110,7 +113,7 @@
     <!--Carousel Wrapper-->
 
 
-  <div class="parallax">
+
     <div id="sobre">
       <h1>Configurações para VScode</h1>
       <p>O site foi criado para tornar o VScode um lugar melhor,
@@ -121,7 +124,7 @@
     </div>
   </div>
  
-
+</div>
       <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);" >
         <a class="text-reset fw-bold" href="https://www.facebook.com/igor.lamoia.5" target="_blank">&copy; 2021 Copyright: Igor Lamoia</a>
       </div>
