@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+* {
+  font-family: 'JetBrains Mono';
+}
+a {
+  text-decoration: none !important;
+}
+.menu {
+  display: flex;
+  background-color: rgb(44, 44, 63);
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.menu img {
+  width: 30px;
+  height: 30px;
+  transition: all 0.5s ease;
+}
+.menu img:hover {
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s ease;
+}
+.menu ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+  height: 5vh;
+}
+.menu li {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.082);
+  transition: all 0.5s ease;
+}
+.menu li > a {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s ease;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+menu {
+  display: flex;
+  justify-self: flex-start;
+}
+.menu ul li:hover > a {
+  padding-left: 30px;
+  padding-right: 30px;
+  
+  background-color: rgba(218, 201, 201, 0.082);
+  color: rgb(255, 0, 140);
+  
+  /* transition: 1s; */
+  transition: all 0.3s ease;
+}
+
+.menu li:last-child > a {
+  display:flex;
+  height: 100%;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 255, 221);
+}
+.menu li:last-child:hover > a {
+  display:flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: rgb(255, 0, 140);
+}
+
+
+
+h1 {
+  font-size: 2rem;
+  padding: 20px;
+}
+p {
+  padding: 20px;
+  font-size: 1rem;
+}
+footer {
+  padding: 20px;
+}
+
+.parallax {
+    background-image: url('../images/VScode.png');
+    /* Definindo a altura*/
+    min-height: 50vh;
+    background-size: cover;
+    /* Criando o efeito do parallax */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+  
+#sobre {
+  background-color: rgba(0, 0, 0, 0.753);
+  min-height: 50vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  color: rgb(75, 73, 73);
+  font-weight: bold;
+  background-color: rgb(0, 255, 221);
+  transition: all 0.7s ease;
+}
+.botao:hover {
+  /* color: rgb(0, 255, 221); */
+  background-color:rgb(255, 0, 140);
+  color: rgb(255, 255, 255);
+}
+
+.botao:before {
+  content: '';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  border-radius: 10px;
+  background-color:rgba(14, 14, 14, 0.466);
+  transition: all 0.7s ease;
+}
+.botao:hover:before {
+  width: 100%;
+}
+
+
+#eu {
+  background-color:red;
+}
