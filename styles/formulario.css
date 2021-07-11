@@ -1,11 +1,11 @@
 body {
   background-color: rgb(255, 0, 140);
-  height: 100vh;
-  overflow: hidden;
+  height: 50vh;
+  /* overflow: hidden; */
 }
 
 .quadradinhos li {
-  z-index:-1;
+  z-index: -1;
   width: 40px;
   height: 40px;
   background-color: rgb(0, 255, 221);
@@ -15,26 +15,30 @@ body {
   animation: up 5s infinite alternate;
 }
 
+textarea {
+  resize: none;
+}
+
 @keyframes up {
   from {
     transform: translateY(0);
-    opacity: 0.4;
+    opacity: 0;
   }
   50% {
     opacity: 1;
   }
   to {
     transform: translateY(-100vh) rotate(960deg);
-    opacity: 0+4;
+    opacity: 0;
   }
 }
 
 .formulario {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  width:80%;
-  background-color:rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: rgb(255, 255, 255);
   margin-top: 50px;
   border-radius: 50px 0px;
 }
@@ -44,7 +48,7 @@ body {
 }
 
 .caixao {
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
   width: 100vw;
 }

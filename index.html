@@ -1,59 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="icon" type="image/png" href="./images/VSicone.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VScode</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
-  <link rel="stylesheet" href="./styles/reset.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./images/VSicone.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VScode</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-  <style>
-    a {
-      text-decoration: none !important;
-    }
-    .carousel-item {
-      height: 50vh !important;
-    }
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/estilo.css" />
 
-  </style>
-</head>
-<body>
-  <navbar class="menu">
-    <a href="#"><img src="./images/VSicone.png" alt="Home"></a>
-    <ul>
-      <li><a type="button" href="./formulario">Home</a></li>
-      <!-- <li><a type="button" href="./formulario">Estilos</a></li> -->
-      <li><a type="button" href="./formulario">Contato</a></li>
-    </ul>
-  </navbar>
-  <div class="parallax">
-    <div id="opacidade">
-     <!--Carousel Wrapper-->
-     <div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
-      <!--Indicadores pra trocar de slide, em ol pois é uma lista ordenada, fica mais semântico-->
-      <ol class="carousel-indicators">
-        <li data-target="#video-carousel-example2" data-slide-to="0" class="active"></li>
-        <li data-target="#video-carousel-example2" data-slide-to="1"></li>
-      </ol>
-      <!--Indicadores-->
-      <!--Dentro de carousel-inner temos os Slides (carousel-item) -->
-      <div class="carousel-inner" role="listbox">
-        <!-- Primeiro slide -->
-        <div class="carousel-item active">
-          <!--View para mudança-->
-          <div class="view">
-            <!--Vídeo-->
-            <video class="video-fluid" autoplay loop muted>
-              <source src="./videos/dracula.mp4" type="video/mp4" />
-            </video>
-          </div>
-    
-          <!--Legenda-->
+    <style>
+      a {
+        text-decoration: none !important;
+      }
+      .carousel-item {
+        height: 50vh !important;
+      }
+      .video-opacidade {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 60vh;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <navbar class="menu">
+      <a href="#"><img src="./images/VSicone.png" alt="Home" /></a>
+      <ul>
+        <li><a type="button" href="./formulario">Home</a></li>
+        <!-- <li><a type="button" href="./formulario">Estilos</a></li> -->
+        <li><a type="button" href="./formulario">Contato</a></li>
+      </ul>
+    </navbar>
+    <div class="parallax">
+      <div id="opacidade">
+        <!--Carousel Wrapper-->
+        <div
+          id="video-tabnine"
+          class="carousel slide carousel-fade"
+          data-ride="carousel"
+        >
+          <!--Indicadores pra trocar de slide, em ol pois é uma lista ordenada, fica mais semântico-->
+          <ol class="carousel-indicators">
+            <li
+              data-target="#video-tabnine"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#video-tabnine" data-slide-to="1"></li>
+          </ol>
+          <!--Indicadores-->
+          <!--Dentro de carousel-inner temos os Slides (carousel-item) -->
+          <div class="carousel-inner" role="listbox">
+            <!-- Primeiro slide -->
+            <div class="carousel-item active">
+              <div class="video-opacidade"></div>
+              <!--View para mudança-->
+              <div class="view">
+                <!--Vídeo-->
+                <video class="video-fluid" autoplay loop muted>
+                  <source src="./videos/dracula.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+          <!-- Legenda -->
           <div class="carousel-caption">
             <div class="animated fadeInDown">
-              <span id="text">
                 <h3 class="h3-responsive">Tema Dracula</h3>
                 <p>Ajuda na 
                   identificação de:
@@ -63,75 +82,102 @@
                     <li>Nomes padrões</li>
                   </ul> 
                 </p>
-              </span>
             </div>
-          </div>
-          <!--Legenda-->
+          </div> 
         </div>
+        <!--Legenda-->
+            <!-- Segundo slide -->
+            <div class="carousel-item">
+              <div class="video-opacidade"></div>
+              <!--View para mudança-->
+              <div class="view">
+                <!--Video source-->
+                  <video class="video-fluid" autoplay loop muted>
+                    <source src="./videos/tabnine.mp4" type="video/mp4" />
+                  </video>
 
-        <!-- Primeiro slide -->
-    
-        <!-- Segundo slide -->
-        <div class="carousel-item">
-          <!--View para mudança-->
-          <div class="view">
-            <!--Video source-->
-            <div id="opacidade">
-            <video class="video-fluid" autoplay loop muted>
-                <source src="./videos/tabnine.mp4" type="video/mp4" />
-              </video>
+              </div>
+
+              <!--Caption-->
+              <div class="carousel-caption">
+                <div class="animated fadeInDown">
+                    <h3 class="h3-responsive">Tabnine</h3>
+                    <p>O melhor autocomplete do mercado</p>
+                </div>
+              </div>
+              <!--Caption-->
             </div>
+            <!-- /.Segundo slide -->
           </div>
-          
-          <!--Caption-->
-          <div class="carousel-caption">
-            <div class="animated fadeInDown">
-              <span id="text">
-                <h3 class="h3-responsive">Tabnine</h3>
-                <p>
-                  O melhor autocomplete do mercado
-                </p>    
-              </span>
-            </div>
-          </div>
-          <!--Caption-->
+          <!--/.Slides-->
+          <!--Controls-->
+          <a
+            class="carousel-control-prev"
+            href="#video-tabnine"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#video-tabnine"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <!--/.Controls-->
         </div>
-        <!-- /.Segundo slide -->
+        <!--Carousel Wrapper-->
+
+        <div id="sobre">
+          <h1>Configurações para VScode</h1>
+          <p>
+            O site foi criado para tornar o VScode um lugar melhor, com dicas
+            para os novatos e também para os mais experientes. Aqui você
+            encontra as configurações básicas para compilar linguagens como C e
+            Java no próprio VScode.
+          </p>
+          <a
+            type="button"
+            class="botao"
+            target="_blank"
+            href="./VScodeConfigExtensaoMelhorado2.pdf"
+            >
+            <span style="z-index: 1">
+              Arquivo
+            </span>
+            </a
+          >
+        </div>
       </div>
-      <!--/.Slides-->
-      <!--Controls-->
-      <a class="carousel-control-prev" href="#video-carousel-example2" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#video-carousel-example2" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-      <!--/.Controls-->
     </div>
-    <!--Carousel Wrapper-->
-
-
-
-    <div id="sobre">
-      <h1>Configurações para VScode</h1>
-      <p>O site foi criado para tornar o VScode um lugar melhor,
-         com dicas para os novatos e também para os mais experientes.
-         Aqui você encontra as configurações básicas para compilar linguagens como C e Java no próprio VScode.
-        </p>
-        <a type="button" class="botao" target="_blank" href="./VScodeConfigExtensaoMelhorado2.pdf">Arquivo</a>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+      <a
+        class="text-reset fw-bold"
+        href="https://www.facebook.com/igor.lamoia.5"
+        target="_blank"
+        >&copy; 2021 Copyright: Igor Lamoia</a
+      >
     </div>
-  </div>
- 
-</div>
-      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);" >
-        <a class="text-reset fw-bold" href="https://www.facebook.com/igor.lamoia.5" target="_blank">&copy; 2021 Copyright: Igor Lamoia</a>
-      </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
 
-</body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="./styles/estilo.css">
 </html>
