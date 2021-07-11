@@ -1,7 +1,8 @@
 body {
-  background-color: rgb(255, 0, 140);
+  /* background-color: rgb(255, 0, 140); */
   height: 50vh;
   scroll-behavior: smooth;
+  background-color: #cecad4;
   /* overflow: hidden; */
 }
 
@@ -39,7 +40,7 @@ textarea {
   justify-content: center;
   align-items: center;
   width: 80%;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffffd7;
   margin-top: 50px;
   border-radius: 50px 0px;
 }
