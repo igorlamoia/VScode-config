@@ -1,6 +1,7 @@
 body {
   background-color: rgb(255, 0, 140);
   height: 50vh;
+  scroll-behavior: smooth;
   /* overflow: hidden; */
 }
 
